@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: h5df
+Version: 0.1.5
+Summary: Library and CLI for storing numeric data frames in HDF5
+Home-page: https://github.com/gilesc/h5df
+Author: Cory Giles
+Author-email: mail@corygil.es
+License: AGPLv3+
+Download-URL: https://github.com/gilesc/h5df/tarball/0.1.5
+Description: UNKNOWN
+Platform: UNKNOWN

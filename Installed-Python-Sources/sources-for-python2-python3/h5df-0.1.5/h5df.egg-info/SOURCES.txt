@@ -1,0 +1,10 @@
+README.rst
+h5df.py
+setup.cfg
+setup.py
+h5df.egg-info/PKG-INFO
+h5df.egg-info/SOURCES.txt
+h5df.egg-info/dependency_links.txt
+h5df.egg-info/entry_points.txt
+h5df.egg-info/requires.txt
+h5df.egg-info/top_level.txt

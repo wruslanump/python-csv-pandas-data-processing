@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>6. About Plugins &#8212; ViTables Users&#39; Guide 3.0.2 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="7. The Help Browser" href="usersguide-app2.html" />
+    <link rel="prev" title="5. Configuring ViTables" href="usersguide-ch5.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="usersguide-app2.html" title="7. The Help Browser"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="usersguide-ch5.html" title="5. Configuring ViTables"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ViTables Users&#39; Guide 3.0.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="about-plugins">
+<span id="appendix-a"></span><h1>6. About Plugins<a class="headerlink" href="#about-plugins" title="Permalink to this headline">¶</a></h1>
+<p>Since version 2.1 <cite>ViTables</cite> has a simple but powerful plugins framework.</p>
+<p>If you are interested in writing plugins the next paragraphs can be of utility. If not you can skip to the list of available plugins.</p>
+<p>Plugins live in the plugins subdirectory of the root directory where the source code is installed. A plugin can be a pure Python module or can have a package structure (i.e. a directory with a <code class="xref py py-mod docutils literal notranslate"><span class="pre">__init__.py</span></code> file). Packages can have as many directories as you want but plugins must be located at top level of the package.</p>
+<p>The use of contracts is not enforced when writing plugins so you have nearly complete freedom for writing them. Nevertheless a plugin must declare the following variables. <code class="xref py py-const docutils literal notranslate"><span class="pre">plugin_class</span></code> which is set to the name of the class invoqued when your plugin is executed by <cite>ViTables</cite>,
+<code class="xref py py-const docutils literal notranslate"><span class="pre">plugin_name</span></code> which is set to the descriptive name of the plugin and will be used in the Plugins page of the Preferences dialog and, finally, <code class="xref py py-const docutils literal notranslate"><span class="pre">comment</span></code> which is set to a short description of the plugin and will be used too in the Plugins page of the Preferences dialog.</p>
+<p>In some cases it can be useful to use convenience variables or methods. For instance, suppose than in the Preferences dialog you want to show a more complete description of your plugin that that provided by the <code class="xref py py-const docutils literal notranslate"><span class="pre">comment</span></code> variable. Then you may be interested in define a method <code class="xref py py-meth docutils literal notranslate"><span class="pre">helpAbout()</span></code> in your plugin.</p>
+<p>Of course some knowledge (not necessarily a deep one) of the <cite>ViTables</cite> code is required in order to bind your plugin to the application core. This task is commonly achieved via the menu bar of the main window or via the signals/slots mechanism (convenience signals can be defined in the application if needed).</p>
+<p>If you need more help just send an email to developers or ask to the <cite>ViTables</cite> Users’ Group.</p>
+<p>Three plugins are currently distributed along with the application:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>Time series formatter</dt><dd><p>formats time series in a human friendly way. It supports PyTables time datatypes and PyTables time series created via <a class="reference external" href="https://pandas.pydata.org">pandas</a> or the obsolete scikits.timeseries module. The format used for displaying times can be configured by user via the Preferences dialog or editing by hand the <code class="file docutils literal notranslate"><span class="pre">time_format.ini</span></code> configuration file.</p>
+</dd>
+<dt>Tree of DBs sorting</dt><dd><p>sorts the display of the databases tree.</p>
+</dd>
+<dt>Columnar organization of arrays</dt><dd><p>rearranges several arrays with the same number of rows and displays them in a unique widget.</p>
+</dd>
+</dl>
+</div></blockquote>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="usersguide-ch5.html"
+                        title="previous chapter">5. Configuring ViTables</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="usersguide-app2.html"
+                        title="next chapter">7. The Help Browser</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usersguide-app1.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="usersguide-app2.html" title="7. The Help Browser"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="usersguide-ch5.html" title="5. Configuring ViTables"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ViTables Users&#39; Guide 3.0.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Vicent Mas.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>

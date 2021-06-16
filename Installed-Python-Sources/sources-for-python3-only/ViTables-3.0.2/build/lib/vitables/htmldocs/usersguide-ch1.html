@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>1. Introduction &#8212; ViTables Users&#39; Guide 3.0.2 documentation</title>
+    <link rel="stylesheet" href="_static/classic.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. First Steps" href="usersguide-ch2.html" />
+    <link rel="prev" title="Welcome to ViTables Users’ Guide!" href="index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="usersguide-ch2.html" title="2. First Steps"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to ViTables Users’ Guide!"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ViTables Users&#39; Guide 3.0.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <div class="section" id="introduction">
+<h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>1.1. Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p><cite>ViTables</cite> is a member of the <cite>PyTables</cite> family. It’s a graphical tool for browsing and editing files in both PyTables and <cite>HDF5</cite> formats. With <cite>ViTables</cite> you can easily navigate through data hierarchies, request metadata, view
+real data and much more.</p>
+<p><cite>ViTables</cite> is being developed using <cite>Python</cite> and <cite>PyQt</cite>, the bindings of <cite>Qt</cite> libraries, so it can run on any platform that supports these components (which includes Windows, Mac OS X, Linux and many other Unices). The interface and features will remain the same on all platforms.</p>
+<p>Efficiency and low memory requirements are guaranteed by the fact that data is loaded only when the object that contains it is opened and by the use of data buffers for dealing with large datasets.</p>
+</div>
+<div class="section" id="capabilities">
+<h2>1.2. Capabilities<a class="headerlink" href="#capabilities" title="Permalink to this headline">¶</a></h2>
+<p>The current release provides browsing, displaying, editing and querying capabilities. Some of them are listed below. Details are discussed in the related chapters.</p>
+<div class="section" id="browsing-and-displaying-capabilities">
+<h3>1.2.1. Browsing and displaying capabilities<a class="headerlink" href="#browsing-and-displaying-capabilities" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Display data hierarchy as a fully browsable object tree.</p></li>
+<li><p>Open several files simultaneously.</p></li>
+<li><p>Open files in write mode as well as in read-only mode, disabling all editing functions.</p></li>
+<li><p>Display file information (path, size, number of nodes…).</p></li>
+<li><p>Display node (group or leaf) properties, including metadata and attributes.</p></li>
+<li><p>Display numerical arrays, i.e. homogeneous tables.</p></li>
+<li><p>Display heterogeneous table entities, i.e. records.</p></li>
+<li><p>Display multidimensional table cells.</p></li>
+<li><p>Unlimited zoom into the inner dimensions of multidimensional table cells.</p></li>
+</ul>
+</div>
+<div class="section" id="editing-capabilities">
+<h3>1.2.2. Editing capabilities<a class="headerlink" href="#editing-capabilities" title="Permalink to this headline">¶</a></h3>
+<p>These editing features have been implemented for the object tree <a class="footnote-reference brackets" href="#f1" id="id1">1</a>:</p>
+<ul class="simple">
+<li><p>File creation and renaming.</p></li>
+<li><p>Node creation (only for groups), renaming and deletion.</p></li>
+<li><p>Ability to copy and move nodes from their location to a different one, even in different files.</p></li>
+<li><p>Attribute creation, renaming and deletion.</p></li>
+</ul>
+<p>All these changes automatically update the database (i.e. the file) to which the nodes belong.</p>
+</div>
+<div class="section" id="other">
+<h3>1.2.3. Other<a class="headerlink" href="#other" title="Permalink to this headline">¶</a></h3>
+<p>Other nice features include:</p>
+<ul class="simple">
+<li><p><em>Ability to smoothly navigate really large datasets</em>.</p></li>
+<li><p>Support for doing complex table queries with a low memory footprint.</p></li>
+<li><p>Import from CSV files.</p></li>
+<li><p>Flexible plugins framework. A bunch of useful plugins are already included, see the <a class="reference internal" href="usersguide-app1.html#appendix-a"><span class="std std-ref">Appendix A</span></a> for
+details.</p></li>
+<li><p>Configurable look and feel.</p></li>
+<li><p>A logger area, where errors and warnings (if any) are printed.</p></li>
+<li><p>Several levels of help are available: users guide, context help, tooltips and status bar.</p></li>
+</ul>
+<p>We have paid special attention to usability issues so making use of these features is intuitive and pleasant.
+Nevertheless, and just in case, we are providing this guide :-).</p>
+</div>
+</div>
+<div class="section" id="system-requirements">
+<h2>1.3. System Requirements<a class="headerlink" href="#system-requirements" title="Permalink to this headline">¶</a></h2>
+<p>To run <cite>ViTables</cite> you need to install recent versions of <cite>Python3</cite>, <cite>PyTables</cite> (so you have to fulfil its own requirements) and <cite>PyQt</cite>. For instance, it runs smoothly with <cite>Python</cite> 3.6, <cite>PyTables</cite> 3.4 and <cite>PyQt</cite> 5.8.</p>
+<p>At the moment, <cite>ViTables</cite> has been fully tested on Linux and Windows 10 platforms. Other Unices should run just fine when using the Linux version because all the software that <cite>ViTables</cite> relies on (i.e. <cite>Python</cite>, <cite>Qt</cite>, <cite>PyQt</cite>, <cite>HDF5</cite> and <cite>PyTables</cite>) is known to run fine on many Unix platforms as well.</p>
+</div>
+<div class="section" id="installation">
+<h2>1.4. Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="linux">
+<h3>1.4.1. Linux<a class="headerlink" href="#linux" title="Permalink to this headline">¶</a></h3>
+<p>The Python setuptools are used to build and install <cite>ViTables</cite>. You can install
+the package from PyPI issuing the command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ pip install ViTables
+</pre></div>
+</div>
+<p>This should install the ViTables wheel. If you experience problems installing
+the binary package you can install from sources (provided your system fulfills
+the requirements listed in the above section). Just download the tarball from
+PyPI, uncompress it, change to the distribution directory and execute (as root):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python setup.py install
+</pre></div>
+</div>
+<p>If you are doing this on a MacOS X platform, please make sure that the
+DYLD_LIBRARY_PATH environment variable has been setup properly.</p>
+<p>By default <cite>ViTables</cite> will be installed in the system-protected area where
+your system installs third party Python packages so you will need superuser
+privileges. If you prefer to install the package in a different location
+(for instance, your home directory) so that the installation can be done by
+non privileged users, you can do it using the –prefix (or –home) tag:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$ python setup.py install --prefix=/home/myuser/mystuff
+</pre></div>
+</div>
+<p>Please, remember that installing Python modules in non-standard locations
+makes it necessary to setup properly the PYTHONPATH environment variable so
+that the Python interpreter can find the new modules.</p>
+<p>If you need further customizations, please have a look to the output of the
+command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$python setup.py install --help
+</pre></div>
+</div>
+<p>to see all the available options. Complete information about them can be
+found in the Distutils documentation.</p>
+</div>
+<div class="section" id="windows-and-mac-os-x">
+<h3>1.4.2. Windows and Mac OS X<a class="headerlink" href="#windows-and-mac-os-x" title="Permalink to this headline">¶</a></h3>
+<p>Currently there are no graphical installers available for these platforms. You
+have to install <cite>ViTables</cite> from the command line, using one of the methods
+described in the Linux section.</p>
+</div>
+</div>
+<div class="section" id="further-reading">
+<h2>1.5. Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline">¶</a></h2>
+<p>General information about <cite>PyTables</cite> can be found at <a class="reference external" href="https://www.pytables.org">its project site</a>.</p>
+<p>Questions and feedback can be mailed to the developers.</p>
+<p class="rubric">Footnotes</p>
+<dl class="footnote brackets">
+<dt class="label" id="f1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>Dataset editing capabilities have not yet been implemented.</p>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Table of Contents</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. Introduction</a><ul>
+<li><a class="reference internal" href="#overview">1.1. Overview</a></li>
+<li><a class="reference internal" href="#capabilities">1.2. Capabilities</a><ul>
+<li><a class="reference internal" href="#browsing-and-displaying-capabilities">1.2.1. Browsing and displaying capabilities</a></li>
+<li><a class="reference internal" href="#editing-capabilities">1.2.2. Editing capabilities</a></li>
+<li><a class="reference internal" href="#other">1.2.3. Other</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#system-requirements">1.3. System Requirements</a></li>
+<li><a class="reference internal" href="#installation">1.4. Installation</a><ul>
+<li><a class="reference internal" href="#linux">1.4.1. Linux</a></li>
+<li><a class="reference internal" href="#windows-and-mac-os-x">1.4.2. Windows and Mac OS X</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#further-reading">1.5. Further Reading</a></li>
+</ul>
+</li>
+</ul>
+
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="index.html"
+                        title="previous chapter">Welcome to ViTables Users’ Guide!</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="usersguide-ch2.html"
+                        title="next chapter">2. First Steps</a></p>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="_sources/usersguide-ch1.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="usersguide-ch2.html" title="2. First Steps"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="index.html" title="Welcome to ViTables Users’ Guide!"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="index.html">ViTables Users&#39; Guide 3.0.2 documentation</a> &#187;</li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2017, Vicent Mas.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 2.2.1.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslanmmu/python-csv-pandas-data-processing$ python2
+Python 2.7.18 (default, Mar  8 2021, 13:02:45) 
+[GCC 9.3.0] on linux2
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 
+
+BASIC SYSTEM PACKAGES
+
+>>> import sys
+>>> import os
+>>> import time
+>>> import datetime
+>>> import dateutil
+>>> import errno
+
+MATHEMATICAL PACKAGES
+
+>>> import numpy           (NumPy is the fundamental package for array computing with Python.) 
+>>> import scipy           (SciPy: Scientific Library for Python)
+>>> import random
+>>> import random2         (Python 3 compatible Pytohn 2 'random' module.)
+>>> import math
+>>> import cmath
+>>> import decimal
+>>> import fractions
+>>> import statistics
+>>> import string
+>>> import StringIO
+>>>
+
+EXECUTION PROCESSING
+
+>>> import mpi4py           (Python bindings for the Message Passing Interface (MPI). API which grounds on the standard MPI-2 C++ bindings.)
+>>> import threading        (Threading in python is used to run multiple threads (tasks, function calls) at the same time.)
+>>> import multiprocessing  (Multiprocessing supports spawning processes using an API. Can fully leverage multiple processors on a given machine.)
+>>> import concurrent       (Launching parallel tasks. Previous topic. multiprocessing.​shared_memory — Provides shared memory for direct access across processe
+>>> import trace            (Trace or track Python statement execution. It can be used in another program or from the command line.)
+>>> import traceback        (standard interface to extract, format and print stack traces of Python programs.) 
+>>> import traceback2       (In Python 2.x, unlike traceback, traceback2 creates unicode output)
+>>>
+
+GRAPHICS PROCESSING PACKAGES
+
+>>> import matplotlib  (Plotting library for Python and NumPy. Provides object-oriented API embedding plots using GUI toolkits Tkinter, wxPython, Qt, or GTK.)
+>>> import matplotlib.pyplot
+>>> import pylab       (Module that bulk imports matplotlib.pyplot (for plotting) and NumPy (for Mathematics) in a single name space.)
+>>> import Gnuplot     (Python package that interfaces to gnuplot. Can plot data on the fly as they are computed.)
+>>> import PyGnuplot   (PyGnuplot: Python wrapper for Gnuplot.)
+>>> import pygnuplot   (Python wrapper for Gnuplot.) 
+>>> import graphviz    (Graphviz module used to create graph objects which can be completed using different nodes and edges.)
+>>> import PyPDF2      (Python program to dynamically generate a graph, digraph in Graphviz's Dot.)
+>>> import pydot       (pydot.PyPI - Python interface to Graphviz's Dot.)
+>>> import pydotplus   (PyDotPlus is an improved version of the old pydot project.)
+>>> import tkinter     (Tkinter is the de facto way in Python to create Graphical User interfaces - GUIs) 
+>>> import PyQt4       (PyQt4 is a comprehensive set of Python bindings for Digia's Qt cross platform GUI toolkit.) 
+>>> import PyQt5       (PyQt5 is a comprehensive set of Python bindings for Qt v5. It is implemented as more than 35 extension modules)
+>>> 
+
+FILE PROCESSING PACKAGES
+
+>>> import io          (Python io module allows us to manage the file-related input and output operations. Can write to Unicode data)
+>>> import fileinput   (Module can iterate over lines from multiple input streams, write a loop over standard input or a list of files, etc)
+>>> import difflib     (Module provides classes and functions for comparing sequences. Can be used for comparing files, file differences, etc) 
+>>> import filecmp     (Module defines functions to compare files and directories, with various optional time/correctness trade-offs.)
+>>> import FileDialog  (File selection dialogs. The tkinter.filedialog module provides classes for creating file/directory selection windows).
+>>> import h5py        (H5PY package is a Pythonic interface to the HDF5 binary data format. For example: Scilab/Octave data outputs/inputs)
+>>> import FileDialog  (File selection dialogs. The tkinter.filedialog module provides classes for creating file/directory selection windows).
+>>> 
+
+DATA PROCESSING PACKAGES
+
+>>> import hdf5storage (Utilities to read/write Python types to/from HDF5 files, including MATLAB v7.3 MAT files.)
+>>> import h5df     (Python library and CLI for storing large numeric data frames in HDF5.)
+>>> import csv      (Comma Separated Values - most common import and export format for spreadsheets and databases.)
+>>> import pandas   (Python Data Analysis - imports data various file formats like comma-separated values, JSON, SQL, Microsoft Excel.)
+>>> import seaborn  (Python Data Visualization - attractive and informative statistical graphics, Matplotlib-based.)
+>>> 
+
+
+[1]+  Stopped                 python2
+wruslan@HPEliteBk8470p-ubstudio-20:~/github/wruslanmmu/python-csv-pandas-data-processing$ 
+
+

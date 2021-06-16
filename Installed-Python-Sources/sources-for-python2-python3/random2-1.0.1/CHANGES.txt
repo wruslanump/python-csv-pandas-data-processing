@@ -1,0 +1,14 @@
+=======
+CHANGES
+=======
+
+1.0.1 (2013-03-15)
+------------------
+
+- Fix setup.py so that an install of the package will actually work.
+
+
+1.0.0 (2013-03-06)
+------------------
+
+- Initial PyPI release.

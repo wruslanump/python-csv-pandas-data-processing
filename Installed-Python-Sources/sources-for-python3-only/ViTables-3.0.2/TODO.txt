@@ -1,0 +1,7 @@
+Possible future additions
+-------------------------
+* Python shell
+* Make datasets editable
+* Images support
+* Statistics and graphics
+

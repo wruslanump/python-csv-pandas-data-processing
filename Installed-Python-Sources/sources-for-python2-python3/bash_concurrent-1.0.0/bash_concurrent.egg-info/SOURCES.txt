@@ -1,0 +1,8 @@
+setup.cfg
+setup.py
+bash_concurrent/__init__.py
+bash_concurrent/concurrent.py
+bash_concurrent.egg-info/PKG-INFO
+bash_concurrent.egg-info/SOURCES.txt
+bash_concurrent.egg-info/dependency_links.txt
+bash_concurrent.egg-info/top_level.txt
